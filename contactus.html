@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>contact us</title>
+		<style>
+		a:link {
+			color:whitesmoke;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited {
+			color:burlywood;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		
+		
+		.header {
+			overflow: hidden;
+			background-color:black;
+		}
+		.menu{
+			width: 100%;
+			height: 100px;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.leftmenu img{
+			width: 10%;
+			line-height: 100px;
+			float: left;
+			padding: 5px;
+			height: 85px;
+			/*	background-color: yellow;*/
+		}
+		.rightmenu{
+			width:70%;
+			height: 100px;
+			float: right;
+			/*	background-color: red; */
+		}
+		.rightmenu ul{
+			margin-left:500px;
+		}
+		.rightmenu ul li {
+			font-family: 'Montserrat', sans-serif;
+			display: inline-block;
+			list-style: none;
+			font-size: 15px;
+			color:white;
+			font-weight: bold;
+			line-height: 100px;
+			margin-left: 40px;
+			text-transform: uppercase;
+		}
+		#fisrtlist{
+			color: orange;
+		}
+		.rightmenu ul li:hover{
+			color: orange;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url('hm2.jpg');
+			font-size: 14px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+			font-family: 'Poppins', sans-serif;
+		}
+		.container{
+			width: 80%;
+			margin: 50px auto;
+		}
+		.contact-box{
+			background: #fff;
+			display: flex;
+		}
+		.contact-left{
+			flex-basis: 60%;
+			padding: 40px 60px;
+		}
+		.contact-right{
+			flex-basis: 40%;
+			padding: 40px;
+			background: #1c00b5;
+			color: #fff;
+		}
+		h1{
+			margin-bottom: 10px;
+		}
+		.container p{
+			margin-bottom: 40px;
+		}
+		.input-row{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		.input-row .input-group{
+			flex-basis: 45%;
+		}
+		input{
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			outline: none;
+			padding-bottom: 5px;
+		}
+		textarea{
+			width: 100%;
+			border: 1px solid #ccc;
+			outline: none;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		label{
+			margin-bottom: 6px;
+			display: block;
+			color: #1c00b5;
+		}
+		button{
+			background: #1c00b5;
+			width: 100px;
+			border: none;
+			outline: none;
+			color: #fff;
+			height: 35px;
+			border-radius: 30px;
+			margin-top: 20px;
+			box-shadow: 0px 5px 15px rgba(28,0,181,0.3);
+		}
+		.contact-left h3{
+			color: #1c00b5;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
+		.contact-right h3{
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
+		tr td:first-child{
+			padding-right: 20px;
+		}
+		tr td{
+			padding-top: 20px;
+		}
+		footer{
+			bottom: 0;
+			Margin-top: 0;
+		}
+			@media (max-height:800px){
+				footer { position: static; }
+				header { padding-top:500px; }
+			}
+			.footer-distributed{
+				background-color: #2c292f;
+				box-sizing: border-box;
+				width: 100%;
+				text-align: left;
+				font: bold 16px sans-serif;
+				padding: 50px 50px 60px 50px;
+			}
+			.footer-distributed .footer-left,
+			.footer-distributed .footer-center,
+			.footer-distributed .footer-right{
+				display: inline-block;
+				vertical-align: top;
+			}
+			/* Footer left */
+			.footer-distributed .footer-left{
+				width: 30%;
+			}
+			.footer-distributed h3{
+				color:  #ffffff;
+				font: normal 36px 'Cookie', cursive;
+				margin: 0;
+			}
+			/* The company logo */
+			.footer-distributed .footer-left img{
+				width: 30%;
+			}
+			.footer-distributed h3 span{
+				color:  #e0ac1c;
+			}
+			/* Footer links */
+			.footer-distributed .footer-links{
+				color:  #ffffff;
+				margin: 20px 0 12px;
+			}
+			.footer-distributed .footer-links a{
+				display:inline-block;
+				line-height: 1.8;
+				text-decoration: none;
+				color:  inherit;
+			}
+			.footer-distributed .footer-company-name{
+				color:  #8f9296;
+				font-size: 14px;
+				font-weight: normal;
+				margin: 0;
+			}
+			/* Footer Center */
+			.footer-distributed .footer-center{
+				width: 35%;
+			}
+			.footer-distributed .footer-center i{
+				background-color:  #33383b;
+				color: #ffffff;
+				font-size: 25px;
+				width: 38
+				height: 38px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 42px;
+				margin: 10px 15px;
+				vertical-align: middle;
+			}
+			.footer-distributed .footer-center p{
+				display: inline-block;
+				color: #ffffff;
+				vertical-align: middle;
+				margin:0;
+			}
+			.footer-distributed .footer-center p span{
+				display:block;
+				font-weight: normal;
+				font-size:14px;
+				line-height:2;
+			}
+			.footer-distributed .footer-center p a{
+				color:  #e0ac1c;
+				text-decoration: none;;
+			}
+			/* Footer Right */
+			.footer-distributed .footer-right{
+				width: 30%;
+			}
+			.footer-distributed .footer-company-about{
+				line-height: 20px;
+				color:  #92999f;
+				font-size: 13px;
+				font-weight: normal;
+				margin: 0;
+			}
+			.footer-distributed .footer-company-about span{
+				display: block;
+				color:  #ffffff;
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			.footer-distributed .footer-icons{
+				margin-top: 10px;
+			}
+			.footer-distributed .footer-icons a{
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				cursor: pointer;
+				background-color:  #33383b;
+				border-radius: 2px;
+				font-size: 20px;
+				color: #ffffff;
+				text-align: center;
+				line-height: 35px;
+				margin-right: 3px;
+				margin-bottom: 5px;
+			}
+			/* Here is the code for Responsive Footer */
+			/* You can remove below code if you don't want Footer to be responsive */
+			@media (max-width: 880px) {
+				.footer-distributed .footer-left,
+				.footer-distributed .footer-center,
+				.footer-distributed .footer-right{
+					display: block;
+					width: 100%;
+					margin-bottom: 40px;
+					text-align: center;
+				}
+				.footer-distributed .footer-center i{
+					margin-top: 500px;
+				}
+			}
+			</style>
+		<link href="https://fonts.google.com/specimen/Baloo+Tamma+2?selection.family=Baloo+Tamma+2" rel="stylesheet">
+	</head>
+	<body>
+		
+			<div class="header">
+				<div class="leftmenu">
+					<img src="logo.jpeg">
+				</div>
+				<div class="rightmenu">
+					<ul>
+						<li id="fisrtlist"><a href="index.html"> HOME </a></li>
+						<li> <a href="aboutus.html">about us</a></li>
+						<li> <a href="gallery.html">PORTFULIO</a></li>
+						<li> <a href="contactus.html">Contact us </a></li>
+						<li> <a href="signup.html" target="_blank" >SIGN UP </a></li>
+						<li><a href="login.html" target="_blank">LOG IN</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		<div class="container">
+			<h1>Connects With Us</h1>
+			<p>We would love to responde to your queries and help you succeed.<br> Feel free to get in touch with us.</p>
+			<div class="contact-box">
+				<div class="contact-left">
+					<h3>Sent your request</h3>
+					<form action="contactus.php" method="post">
+						<div class="input-row">
+							<div class="input-group">
+								<label> Name</label>
+								<input type="text" name="Name" placeholder="Enter Name">
+							</div>
+							<div class="input-group">
+								<label> Phone</label>
+								<input type="text" name="Phone" placeholder="Enter Phone">
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-group">
+								<label> Email</label>
+								<input type="Email" name="Email_id"placeholder="Enter Email">
+							</div>
+							<div class="input-group">
+								<label>Subject</label>
+								<input type="text" name="Subject" placeholder="Enter Subject">
+							</div>
+						</div>
+						<label>Message</label>
+						<textarea rows="5" name="Message" placeholder="Your Message"></textarea>
+						<button type="submit">SEND</button>
+					</form>
+				</div>
+				<div class="contact-right">
+					<h3>Reach us</h3>
+					<table>
+						<tr>
+							<td>Email</td>
+							<td>zdnyksmaha@rediffmail.com</td>
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td>26530291<br>
+                    26530292</td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td>Nehru Yuva Kendra Sangathan<br>
+2 Floor,JPN Bhawan,Kalina Camp<br>
+Mumbai University, Vidyanagri<br>
+Mumbai,
+Maharashtra<br>
+Pin : 400098
+							</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+		</div>
+			
+		        <footer class="footer-distributed">
+					<div class="footer-left">
+						<img src="rr3.jpg">
+						<h3>About <span> NYKS </span></h3>
+						<p class="footer-links">
+						<a href="#"><a href="index.html">Home</a></a>
+						|
+						<a href="#" ><a href="login.html">LOGIN</a></a>
+						|
+						<a href="#"><a href="aboutus.html">About</a></a>
+						|
+						<a href="#"><a href="contactus.html">Contact</a></a>
+						</p>
+						<p class="footer-company-name">Nehru Yuva Sangathan Kendra</p>
+					</div>
+					<div class="footer-center">
+						<div>
+							<i class="fa fa-map-marker"></i>
+							<p>2 Floor,JPN Bhawan,Kalina Camp Mumbai University, Vidyanagri<br>Mumbai,Maharashtra Pin : 400098</p>
+						</div>
+						<div>
+							<i class="fa fa-phone"></i>
+							<p>26530291</p>
+						</div>
+					</div>
+					<div class="footer-right">
+						<p class="footer-company-about">
+						<span>About the company</span>
+						We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+						<div class="footer-icons">
+							<a href="https://www.facebook.com/nyksindia/" class="fa fa-facebook"></a>
+							<a href="https://twitter.com/Nyksindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.instagram.com/explore/locations/255312018/nehru-yuva-kendra-sangathan-nyks-india"><i class="fa fa-instagram"></i></a>
+							<a href="https://in.linkedin.com/company/nehru-yuva-kendra"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.youtube.com/channel/UC92JD6qkHMDq6oiDftS6RbQ/videos"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+				</footer>
+	</body>
+</html>
